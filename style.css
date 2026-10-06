@@ -1,0 +1,220 @@
+/* ==========================================
+   第四週 CSS 實作
+   ========================================== */
+
+
+/* ==========================================
+   1. 全域重設與基本設定
+   ========================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: "Noto Sans TC",
+        "Microsoft JhengHei",
+        "PingFang TC",
+        sans-serif;
+
+    line-height: 1.6;
+
+    color: #333333;
+
+    background-color: #f4f6f9;
+
+    margin: 0;
+
+    padding: 0;
+}
+
+
+/* ==========================================
+   2. 頁首 Header
+   ========================================== */
+
+header {
+    background-color: #2c3e50;
+
+    color: #ffffff;
+
+    padding: 15px 30px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+
+/* Header 標題 */
+
+header h1 {
+    margin: 0;
+
+    font-size: 22px;
+}
+
+
+/* ==========================================
+   3. 導覽列 Nav
+   ========================================== */
+
+nav {
+    display: flex;
+
+    gap: 15px;
+}
+
+
+/* 導覽列連結 */
+
+nav a {
+    color: #ecf0f1;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    padding: 6px 12px;
+
+    border-radius: 4px;
+
+    transition: background-color 0.3s;
+}
+
+
+/* 滑鼠移過去的效果 */
+
+nav a:hover {
+    color: #7b2222;
+
+    background-color: #a539a9;
+
+    text-decoration: none;
+}
+
+
+/* ==========================================
+   4. 主要內容 Section
+   ========================================== */
+
+section {
+    background-color: #ffffff;
+
+    max-width: 800px;
+
+    margin: 25px auto;
+
+    padding: 30px;
+
+    border-radius: 8px;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+
+/* ==========================================
+   5. 標題
+   ========================================== */
+
+h2 {
+    color: #2c3e50;
+
+    border-bottom: 2px solid #3498db;
+
+    padding-bottom: 8px;
+
+    margin-top: 0;
+}
+
+
+h3 {
+    color: #34495e;
+}
+
+
+/* ==========================================
+   6. 世新大學 Logo
+   ========================================== */
+
+section img {
+    width: 180px;
+
+    height: auto;
+
+    display: block;
+
+    margin: 20px auto;
+}
+
+
+/* ==========================================
+   7. 清單
+   ========================================== */
+
+ul {
+    padding-left: 20px;
+
+    line-height: 1.8;
+}
+
+
+/* ==========================================
+   8. 表格
+   ========================================== */
+
+table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    margin-top: 15px;
+}
+
+
+/* 表格資料 */
+
+th,
+td {
+    padding: 12px 15px;
+
+    text-align: left;
+
+    border-bottom: 1px solid #e2e8f0;
+}
+
+
+/* 表頭 */
+
+th {
+    background-color: #6b8da4;
+
+    color: #eaefa1;
+}
+
+
+/* 偶數列變色 */
+
+tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+
+/* ==========================================
+   9. 頁尾 Footer
+   ========================================== */
+
+footer {
+    text-align: center;
+
+    padding: 20px;
+
+    color: #7f8c8d;
+
+    font-size: 14px;
+
+    margin-top: 40px;
+}
